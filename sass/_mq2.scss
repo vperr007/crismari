@@ -1,0 +1,49 @@
+// To enable support for browsers that do not support @media queries,
+// (IE <= 8, Firefox <= 3, Opera <= 9) set $mq-responsive to false
+// Create a separate stylesheet served exclusively to these browsers,
+// meaning @media queries will be rasterized, relying on the cascade itself
+$mq-responsive: true;
+
+// Name your breakpoints in a way that creates a ubiquitous language
+// across team members. It will improve communication between
+// stakeholders, designers, developers, and testers.
+$mq-breakpoints: (
+    mobile:  320px,
+    smallTablet : 600px,
+    tablet:  740px,
+    desktop: 980px,
+
+    // Tweakpoints
+    desktopAd: 810px,
+    mobileLandscape: 480px,
+    tabletLandscape: 800px,
+    tabletL: 800px,
+    bt: 1000px,
+    over11k: 1100px,
+    wide:    1300px,
+
+    smallTabletx : 601px,
+    tabletx: 741px
+
+);
+
+// Define the breakpoint from the $mq-breakpoints list that should
+// be used as the target width when outputting a static stylesheet
+// (i.e. when $mq-responsive is set to 'false').
+$mq-static-breakpoint: desktop;
+
+// If you want to display the currently active breakpoint in the top
+// right corner of your site during development, add the breakpoints
+// to this list, ordered by width, e.g. (mobile, tablet, desktop).
+// $mq-show-breakpoints: (mobile, mobileLandscape, smallTablet, tablet, tabletL, desktopAd, desktop, bt);
+//doesn't show bc of nav z-index
+
+
+@import 'mq';
+// With eyeglass:
+// @import 'sass-mq';
+// With diamond:
+// @import '~sass-mq';
+// @if length($mq-show-breakpoints) > 0 {
+//     @include mq-show-breakpoints;
+// }

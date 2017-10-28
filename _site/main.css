@@ -1,0 +1,90 @@
+body{
+  /*background: url('crismari.jpg');*/
+  /*height: 50vh;*/
+  /*width: 50%;*/
+  /*color: white;*/
+}
+
+.header{
+  height: 70vmin;
+  width: 100%;
+  background: url('girl.jpg');
+  background-size: 100% 100%;
+}
+
+.header h1 span{
+  display: block;
+}
+
+h1{
+  /*font-size: 6rem;*/
+  font-size: 18vh;
+  color: white;
+  text-transform: uppercase;
+  line-height: 4.2rem;
+  /*margin-top: 20%;*/
+  padding-top: 3rem;
+
+}
+
+/*salon*/
+h5{
+  margin: -2.4em 2.5em 0 1.0em;
+  font-size: 185%;
+  /*font-size: 5.8vmax;*/
+  letter-spacing: 0.6em;
+  color: #fff;
+  /*text-shadow: 10px 10px 10px #000;*/
+}
+
+.nav-section{
+  background-color: 000;
+  margin-top: -0%;
+  border-top: 1px #aaa solid;
+  height: 1em;
+}
+
+ul.slimmenu > li > a{
+  /*color: #1d1d1d !important;*/
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+ul > li:nth-child(3) > span > a{
+  /*color: red;*/
+  text-decoration: none;
+  /*font-weight: bolder;*/
+}
+
+
+h2{
+  /*margin: -2.4em 2.5em 0 1.0em;*/
+  font-size: 2.2rem;
+  letter-spacing: -0.1em;
+  color: black;
+  text-align: center;
+}
+
+.services-section{
+  background-color: white
+}
+
+.services-section p{
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.services-section p span{
+  padding:  0 1em;
+  font-weight: bold;
+}
+
+button{
+  /*background-color: #cec2d3;*/
+  background-color: #000;
+  padding: 0.5em;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  /*color: red;*/
+}
