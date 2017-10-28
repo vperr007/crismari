@@ -186,4 +186,7 @@ img {
   color: white;
   text-align: center;
   font-family: oswald;
-  font-weight: bold; }
+  font-weight: bold;
+  background: url("/dist/images/spin.jpg"); }
+  .contact-section p {
+    font-size: 0.7em; }
