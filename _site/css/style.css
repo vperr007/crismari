@@ -6,7 +6,7 @@ body {
 .header {
   height: 70vmin;
   width: 100%;
-  background: url("/girl.jpg");
+  background-image: url("/dist/images/girl.jpg");
   -webkit-background-size: 100% 100%;
           background-size: 100% 100%; }
   @media (min-width: 46.25em) {
@@ -186,4 +186,7 @@ img {
   color: white;
   text-align: center;
   font-family: oswald;
-  font-weight: bold; }
+  font-weight: bold;
+  background: url("dist/images/spin.jpg"); }
+  .contact-section p {
+    font-size: 0.7em; }
