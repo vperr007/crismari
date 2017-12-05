@@ -9,24 +9,28 @@
 <body>
 
   <div class='header'>
+    <div class='main-title'>
+      <h1 class='main-title2'>Cris <span class='main-title2'>Mari</span></h1>
+    </div>
+    <h5 class='relocate'>SALON</h5>
 
-    <h1>Cris <span>Mari</span></h1>
-    <h5>SALON</h5>
-
+<!-- <h1 id='cris' class='main-title'></h1>
+<h1 id='mari' class='main-title'></h1> -->
+<!-- <h5>SALON</h5> -->
 
   </div>
 
   <section class='nav-section'>
     <!-- Services Offered -->
     <ul class='slimmenu'>
-      <li><a href='#'>SERVICES</a></li>
+      <li><a href='#service'>SERVICES</a></li>
 
       <!-- <li><a href='#'>PRICES</a></li> -->
       <li><a href='#'><span class='bolder'>BOOK ONLINE</span></a>
       </li>
       <!-- <li><a href='#'>PREVIOUS WORK</a></li> -->
-      <li><a href='#'>PHOTOS</a></li>
-      <li><a href='#'>CONTACT US</a></li>
+      <li><a href='#photos'>PHOTOS</a></li>
+      <li><a href='#contact'>CONTACT US</a></li>
 
 
     </ul>
@@ -36,7 +40,7 @@
   <section class='services-section'>
     <div class='services-white-bkgd'>
 
-    <h2>SERVICES</h2>
+    <h2 id='service'>SERVICES</h2>
     <p class='right'>Dominican Blowout<span>$30+</span></p>
     <p class='right'>roller set & Blowout<span>$30+</span></p>
 
@@ -72,15 +76,32 @@
 </section>
 
 <section class='contact-section'>
-  <h2>VISIT US!</h2>
-  <p>8236 W Waters Ave, Tampa, Fl 33615</p>
-  <p>(813) 443-5036 or (813) 317-0416  </p>
-  <p>crismarisalon10@yahoo.com</p>
-  <h3>HOURS OF OPERATION</h3>
-  <p>MONDAY: 9am-3pm</p>
-  <p>TUESDAY-THURSDAY: 9am-2pm</p>
-  <p>FRIDAY-SATURDAY: 9am-4pm</p>
-  <p>SUNDAY: CLOSED</p>
+  <h2 id='contact'>VISIT US!</h2>
+  <div class='contact-container'>
+
+  <ul class='contact-list'>
+    <!-- <li> <h3 class='float-right'>THE SALON</h3></li> -->
+<li id='scissors'>&#9986;</li>
+  <li class='float-left'>8236 W Waters Ave</li>
+  <li class='float-left'>Tampa, Fl 33615</li>
+
+  <li class='float-left'>(813) 443-5036 or (813) 317-0416</li>
+  <!-- <li class='float-left'>(813) 443-5036</li>
+  <li class='float-left'>(813) 317-0416</li> -->
+  <li class='float-left'>crismarisalon10@yahoo.com</li>
+</ul>
+
+</div>
+<div class='contact-container2'>
+  <ul class='hours-of-operation'>
+
+    <li> <h3 class='float-right'>HOURS OF OPERATION</h3></li>
+    <li class='float-right'>MONDAY: 9am-3pm</li>
+    <li class='float-right'>TUESDAY-THURSDAY: 9am-2pm</li>
+    <li class='float-right'>FRIDAY-SATURDAY: 9am-4pm</li>
+    <li class='float-right'>SUNDAY: CLOSED</li>
+  </ul>
+</div>
 
 </section>
   <script src="jquery.slimmenu.min.js"></script>
