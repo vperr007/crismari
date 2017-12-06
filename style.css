@@ -66,7 +66,7 @@ ul > li:nth-child(3) > span > a {
   top: 55px;
   padding-bottom: 10vmin;
   border-bottom: 5px solid white;
-  background-image: url("crismari/dist/images/girl.jpg");
+  background-image: url("../dist/images/girl.jpg");
   -webkit-background-size: 100% 100%;
           background-size: 100% 100%;
   position: relative; }
@@ -161,7 +161,7 @@ h2 {
       border-top: 6px solid #fff; } }
 
 .services-white-bkgd {
-  background: url("crismari/dist/images/cityb.jpg");
+  background: url("https://vperr007.github.io/crismari/dist/images/cityb.jpg");
   color: white;
   width: 87%;
   -webkit-background-size: 130% 100%;
