@@ -17,7 +17,59 @@ $(document).ready(function(){
       indentChildren: false, /* Indentation option for the responsive collapsed sub menus. If set to true, all sub menus will be indented with the value of the option below. */
       childrenIndenter: '&nbsp;', /* Responsive sub menus will be indented with this character according to their level. */
       expandIcon: '<i>&#9660;</i>', /* An icon to be displayed next to parent menu of collapsed sub menus. */
-      collapseIcon: '<i>&#9650;</i>' /* An icon to be displayed next to parent menu of expanded sub menus. */
+      collapseIcon: '<i>&#9650;</i>', /* An icon to be displayed next to parent menu of expanded sub menus. */
+
   });
+
+//my code
+//  if( $('.slimmenu.collapsed').css('display') == 'block')
+//
+// {
+//   console.log('true');
+// }
+// console.log('false')
+
+
+// if( $('.collapse-button').click('display') == 'block'){
+//
+// }
+
+// $(".menu-collapser").click(function(){
+//     $(this).data('click', true);
+// });
+//
+// if($('.menu-collapser').data('click')) {
+//     console.log('yes');
+// }
+
+
+$(".icon-bar").click(function(){
+    $(this).data('click', true);
+});
+
+if($('.icon-bar').data('click')) {
+    console.log('yes');
+  }
+
+  if ( $(window).width() < 301 ){
+     $('#menu').css('overflow', 'hidden');
+}
+
+$('#menu').click(function(e){
+  if($('#menu').css("display")=="block")
+  { $(".collapse-button").click()}
+    e.isTrigger//undefined when the element is clicked
+    e.isTrigger = true; //true for $(element).trigger('click');
+});
+$('#menu').trigger('click');
+
+$(document).click(function (e) { var container = $("#menu,.menu-collapser"); //where "navigation" is main ul id  // if the target of the click isn't the container...  // ... nor a descendant of the container
+if (!container.is(e.target) && container.has(e.target).length === 0 && $(window).width() <= 1800)
+{ if($('#menu').css("display")=="block"){ $(".collapse-button").click(); } } });
+// $menuCollapser.hide();
+  // if (container.has(event.target).length === 0) {
+  //     $('.menu-collapser li').removeClass('expanded');
+  //   }
+
 
 });

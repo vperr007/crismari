@@ -3,21 +3,130 @@
 body
   /*background: url('crismari.jpg')*/
   /*height: 50vh*/
-  width: 97%
+  width: 100%
+  margin: 0 auto
+  background-color: white
+  height: 100%
   /*color: white*/
 
+.nav-section
+  background-color: 000
+  // margin-top: -0%
+  // background-color: rgba(255,255,255,0.1)
+  top: 0
+  left: 0
+  right: 0
+  position: fixed
+  border-bottom: 3px #fff solid
+  z-index: 200
+  height: 1em
+  // padding-bottom: 2.5vw
+  // margin-bottom: 12vw
+  // @include mq($from: smallTablet)
+  //   padding-bottom: 1vh
+  //
+  //   margin-bottom: -13vmin
+  // @include mq($from: desktop)
+  //   margin-bottom: -50vw
+  //   padding-bottom: 10px
+
+.collapse-button
+  background-color: white
+  color: black
+
+.menu-collapser
+  // background-color: white
+  color: black
+
+div.menu-collapser
+  // background-color: white
+  color: black
+
+
+  // div.collapse-button
+  //   background-color: white
+  //   color: black
+  //
+  //   span.icon-bar
+  //     color: black
+  // // background-color: rgba(0,0,0,0.1)
+
+ul.slimmenu.collapsed
+  width: 60vmin
+  white-space: nowrap
+  // margin-left: 83vmin
+  right: 0%
+  text-align: right
+  position: absolute
+  padding: 0
+  @include mq($from: smallTablet)
+    width: 50vmin
+    max-width: 300px
+  li > a
+    padding-right: 1em
+    letter-spacing: 0.2em
+    // width: 100%
+    white-space: nowrap
+
+
+
+ul.slimmenu > li
+  z-index: 40
+  text-align: right
+  // padding: 0
+
+
+ul.slimmenu > li > a
+  /*color: #1d1d1d !important*/
+  padding-right: 0
+
+  text-decoration: none
+  font-weight: bolder
+  z-index: 30
+  text-align: right
+
+
+ul > li:nth-child(3) > span > a
+  /*color: red*/
+  text-decoration: none
+  /*font-weight: bolder*/
 
 .header
   height: 70vmin
   width: 100%
+  top: 55px
+  padding-bottom: 10vmin
+  border-bottom: 5px solid white
+  // margin-bottom: 2em
+  // margin-top: -4vmax
+  // margin-top: -4vmax
+  // margin-top: 11vmax
+  // margin-top: 10px
   background-image: url('/dist/images/girl.jpg')
   background-size: 100% 100%
   position: relative
-  @include mq($from: tablet)
-    // font-size: 37vh
-    height: 79vmin
   @include mq($from: mobileLandscape, $until: smallTablet)
-    padding-bottom: 4rem
+    // padding-bottom: 12vh
+    margin-bottom: 16em
+    // margin-top: -8.5vw
+    // margin-top: 0vmin
+    height: 80vh
+  // @include mq($from: smallTablet, $until: tablet)
+  //   margin-top: -9.5vmax
+  // @include mq($from: tablet, $until: over11k)
+  //   margin-top: -10.5vmax
+  //   height: 79vmin
+  @include mq($from: over11k)
+    // margin-top: -7.8vw
+    height: 80vmin
+  @include mq($from: smallTablet, $until: over11k)
+    height: 60vmin
+    margin-bottom: 16em
+
+    // margin-top: -9vw
+
+    // height: 79vmin
+
 
 .header h1 span
   display: block
@@ -37,6 +146,7 @@ h1
   font-size: 23vmin
   color: #dbdbdb
   z-index: 10
+  // overflow: hidden
   font-family: Oswald
   text-transform: uppercase
   position: relative
@@ -52,8 +162,10 @@ h1
     font-size: 20vmax
     line-height: 17.7vmax
   @include mq($from: over11k)
-    font-size: 14vmax
-    line-height: 12.7vmax
+    font-size: 18vmax
+    line-height: 15vmax
+    // letter-spacing: 0.03em
+    margin-left: 0.3em
 
 // h1 span
 //   color: white
@@ -69,34 +181,15 @@ h5
   letter-spacing: 0.6em
   color: #fff
   /*text-shadow: 10px 10px 10px #000*/
-  @include mq($from: smallTablet)
+  @include mq($from: smallTablet, $until: desktop)
     margin: -16vmin 1.0em 0 0.5em
     font-size: 250%
   @include mq($from: mobileLandscape, $until: smallTablet)
     margin: 0.1em 1.0em 0 1.8em
-
-
-
-.nav-section
-  background-color: 000
-  margin-top: -0%
-  border-top: 1px #aaa solid
-  border-bottom: 3px #fff solid
-
-  height: 1em
-
-
-ul.slimmenu > li > a
-  /*color: #1d1d1d !important*/
-  text-decoration: none
-  font-weight: bolder
-
-
-ul > li:nth-child(3) > span > a
-  /*color: red*/
-  text-decoration: none
-  /*font-weight: bolder*/
-
+  @include mq($from: desktop)
+    margin-top: -2.3em
+    margin-left: 1.2em
+    letter-spacing: 0.7em
 
 
 h2
@@ -114,22 +207,35 @@ h2
 
 .services-section
   background-color: rgb(5,10,5)
-  padding: 0 0 1em 0
+  padding: 0 0 2em 0
   // margin: 3em 1em 30em 0
-  border-top: 3px #fff solid
+  border-top: 3px solid #fff
   // height: auto
+  background-color: black
+  @include mq($from: mobileLandscape, $until: over11k)
+    margin-top: -14.1em
+
+  @include mq($from: over11k)
+    // padding: 0 0 22em 0
+    margin-top: 1em
+
+    border-top: 6px solid #fff
+
 
 
 
 
 .services-white-bkgd
-  box-shadow: 2px 2px 15px #545454, -2px 2px 15px #545454;
-  background-color: #f6f6f6
-  background: url('/dist/images/citys.jpg')
+  // box-shadow: 2px 2px 15px #545454, -2px 2px 15px #545454;
+  // background-color: #f6f6f6
+  background: url('dist/images/cityb.jpg')
+  background: url('/dist/images/cityb.jpg')
+
+  color: white
   width: 87%
   background-size: 130% 100%
   margin: 0 auto
-  padding: 0.2em 0 0.4em 0
+  padding: 1.8em 0 0.4em 0
   // height: 53%
   // position: relative
   // overflow: auto
@@ -149,7 +255,7 @@ h2
 
   // color: rgb(46,46,36)
   // margin: 1em auto 0 auto
-  color: black
+  // color: black
   // display: inline-block
   // font-weight: 500
   @include mq($from: smallTablet)

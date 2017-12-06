@@ -1,22 +1,86 @@
 body {
   /*background: url('crismari.jpg')*/
   /*height: 50vh*/
-  width: 97%;
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+  height: 100%;
   /*color: white*/ }
+
+.nav-section {
+  background-color: 000;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  border-bottom: 3px #fff solid;
+  z-index: 200;
+  height: 1em; }
+
+.collapse-button {
+  background-color: white;
+  color: black; }
+
+.menu-collapser {
+  color: black; }
+
+div.menu-collapser {
+  color: black; }
+
+ul.slimmenu.collapsed {
+  width: 60vmin;
+  white-space: nowrap;
+  right: 0%;
+  text-align: right;
+  position: absolute;
+  padding: 0; }
+  @media (min-width: 37.5em) {
+    ul.slimmenu.collapsed {
+      width: 50vmin;
+      max-width: 300px; } }
+  ul.slimmenu.collapsed li > a {
+    padding-right: 1em;
+    letter-spacing: 0.2em;
+    white-space: nowrap; }
+
+ul.slimmenu > li {
+  z-index: 40;
+  text-align: right; }
+
+ul.slimmenu > li > a {
+  /*color: #1d1d1d !important*/
+  padding-right: 0;
+  text-decoration: none;
+  font-weight: bolder;
+  z-index: 30;
+  text-align: right; }
+
+ul > li:nth-child(3) > span > a {
+  /*color: red*/
+  text-decoration: none;
+  /*font-weight: bolder*/ }
 
 .header {
   height: 70vmin;
   width: 100%;
+  top: 55px;
+  padding-bottom: 10vmin;
+  border-bottom: 5px solid white;
   background-image: url("/dist/images/girl.jpg");
   -webkit-background-size: 100% 100%;
           background-size: 100% 100%;
   position: relative; }
-  @media (min-width: 46.25em) {
-    .header {
-      height: 79vmin; } }
   @media (min-width: 30em) and (max-width: 37.49em) {
     .header {
-      padding-bottom: 4rem; } }
+      margin-bottom: 16em;
+      height: 80vh; } }
+  @media (min-width: 68.75em) {
+    .header {
+      height: 80vmin; } }
+  @media (min-width: 37.5em) and (max-width: 68.74em) {
+    .header {
+      height: 60vmin;
+      margin-bottom: 16em; } }
 
 .header h1 span {
   display: block; }
@@ -51,8 +115,9 @@ h1 {
       line-height: 17.7vmax; } }
   @media (min-width: 68.75em) {
     h1 {
-      font-size: 14vmax;
-      line-height: 12.7vmax; } }
+      font-size: 18vmax;
+      line-height: 15vmax;
+      margin-left: 0.3em; } }
 
 /*salon*/
 h5 {
@@ -61,30 +126,18 @@ h5 {
   letter-spacing: 0.6em;
   color: #fff;
   /*text-shadow: 10px 10px 10px #000*/ }
-  @media (min-width: 37.5em) {
+  @media (min-width: 37.5em) and (max-width: 61.24em) {
     h5 {
       margin: -16vmin 1.0em 0 0.5em;
       font-size: 250%; } }
   @media (min-width: 30em) and (max-width: 37.49em) {
     h5 {
       margin: 0.1em 1.0em 0 1.8em; } }
-
-.nav-section {
-  background-color: 000;
-  margin-top: -0%;
-  border-top: 1px #aaa solid;
-  border-bottom: 3px #fff solid;
-  height: 1em; }
-
-ul.slimmenu > li > a {
-  /*color: #1d1d1d !important*/
-  text-decoration: none;
-  font-weight: bolder; }
-
-ul > li:nth-child(3) > span > a {
-  /*color: red*/
-  text-decoration: none;
-  /*font-weight: bolder*/ }
+  @media (min-width: 61.25em) {
+    h5 {
+      margin-top: -2.3em;
+      margin-left: 1.2em;
+      letter-spacing: 0.7em; } }
 
 h2 {
   font-size: 3rem;
@@ -96,19 +149,25 @@ h2 {
 
 .services-section {
   background-color: #050a05;
-  padding: 0 0 1em 0;
-  border-top: 3px #fff solid; }
+  padding: 0 0 2em 0;
+  border-top: 3px solid #fff;
+  background-color: black; }
+  @media (min-width: 30em) and (max-width: 68.74em) {
+    .services-section {
+      margin-top: -14.1em; } }
+  @media (min-width: 68.75em) {
+    .services-section {
+      margin-top: 1em;
+      border-top: 6px solid #fff; } }
 
 .services-white-bkgd {
-  -webkit-box-shadow: 2px 2px 15px #545454, -2px 2px 15px #545454;
-          box-shadow: 2px 2px 15px #545454, -2px 2px 15px #545454;
-  background-color: #f6f6f6;
-  background: url("/dist/images/citys.jpg");
+  background: url("/dist/images/cityb.jpg");
+  color: white;
   width: 87%;
   -webkit-background-size: 130% 100%;
           background-size: 130% 100%;
   margin: 0 auto;
-  padding: 0.2em 0 0.4em 0; }
+  padding: 1.8em 0 0.4em 0; }
   @media (min-width: 37.5em) {
     .services-white-bkgd {
       width: 83%; } }
@@ -117,8 +176,7 @@ h2 {
   text-transform: uppercase;
   text-align: left;
   font-size: 3.4vw;
-  font-family: oswald;
-  color: black; }
+  font-family: oswald; }
   @media (min-width: 37.5em) {
     .services-section p {
       font-size: 2.3vw; } }
